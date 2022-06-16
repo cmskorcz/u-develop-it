@@ -1,8 +1,10 @@
 const router = require('express').Router();
 const candidateRoutes = require('./candidateRoutes');
-const partyRoutes = require('./partyRoutes')
+const partyRoutes = require('./partyRoutes');
+const voterRoutes = require('./voterRoutes');
 
 router.use(candidateRoutes);
 router.use(partyRoutes);
+router.use(voterRoutes);
 
 module.exports = router;
